@@ -1,0 +1,211 @@
+/* *{
+    background-color: pink;
+}
+img{
+    width: 300px;
+    height: 450px;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+aside{
+    width: 260px;
+    height: 450px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.position-of-words{
+    position:absolute;
+    left:40px
+
+}
+.price{
+    bottom: 100px;
+    font-size: 35px;
+    color: green;
+
+}
+.old-price{
+    bottom: 112px;
+    left: 160px;
+}
+
+.description{
+    top: 185px;
+    margin-right: 30px;
+    color: hsl(228, 45%, 44%);
+}
+h1{
+    top: 30px;
+    margin-right: 5px;
+}
+.cart{
+    bottom: 35px;
+    left: 39px;
+    background-color: green;
+    padding: 10px;
+    width: 160px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+}
+.parfume{
+    top: 15px;
+    color: hsl(228, 45%, 44%);
+}
+.attribution,
+a{
+    bottom: 0;
+    background-color: #009688;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+}
+a{
+    color: black;
+} */
+
+
+body{
+    background-color: antiquewhite;
+}
+.container{
+    position: absolute;
+    left: 60%;
+    top: 50%;
+    transform: translate(-70%, -50%);
+    display: grid;
+    grid-template-columns: 250px 300px ;
+    grid-template-rows: auto  ;
+}
+article{
+    grid-column: 1/2;
+    width: 50%;
+}
+aside{
+    grid-column: 2/3;
+    background-color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    position: relative;
+}
+img{
+    width: 300px;
+
+}
+.PARENT{
+    width: 350px;
+}
+
+.attribution{
+    width: 220%;
+    text-align: center;
+}
+.parfume{
+    position: absolute;
+    left: 20px;
+    top: 5%;
+}
+.strong{
+    position: absolute;
+    left: 20px;
+    top: 10%;
+    width: 55%;
+}
+.description{
+    position: absolute;
+    left: 20px;
+    bottom: 45%;
+    width: 75%;
+}
+.price{
+    position: absolute;
+    left: 20px;
+    bottom: 25%;
+    font-size: 40px;
+    color: green;
+}
+.old-price{
+    position: absolute;
+    left: 53%;
+    bottom: 29%;
+}
+.cart{
+    position: absolute;
+    left: 7%;
+    bottom: 7%;
+    background-color: green;
+    padding: 10px;
+    width: 65%;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+}
+
+@media (max-width:375px){
+    .container{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        display: grid;  
+        grid-template-columns: auto;
+        grid-template-rows: 45% 55%;
+        height: 550px;
+        
+    }
+    article{
+        grid-column: 1/1;
+        height: 100%;
+    }
+    aside{
+        grid-column: 1/1;
+        position: relative;
+        width: 100%;
+    }
+    img{
+        height: 100%;
+    }
+    .PARENT{
+        height: 100%;
+    }
+    .attribution{
+        width: 100%;
+        text-align: center;
+    }
+    .parfume{
+        position: absolute;
+        left: 20px;
+        top: 5%;
+    }
+    .strong{
+        position: absolute;
+        left: 20px;
+        top: 7%;
+        width: 70%;
+    }
+    .description{
+        position: absolute;
+        left: 20px;
+        bottom: 45%;
+        width: 85%;
+    }
+    .price {
+        position: absolute;
+        left: 20px;
+        bottom: 25%;
+        font-size: 35px;
+        color: green;
+    }
+    .old-price{
+        position: absolute;
+        left: 50%;
+        bottom: 30%;
+    }
+}
